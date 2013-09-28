@@ -1,12 +1,10 @@
-poo-piloto
-==========
+# poo-piloto
 
 UNTreF - Algoritmos y Programación 1
 
-Ejercicio 1
-----------
+## Ejercicio 1
 
-## Enunciado
+### Enunciado
 
 Implementar la clase Piloto
 
@@ -22,10 +20,11 @@ Implementar la clase Piloto
 	
 	}
 
-## Ejecución
+### Ejecución
 
 	> new BatalaEspacial()
 	> Nave nave = new Nave()
+	> nave.despegar()
 	> Piloto pilotoNovato = new Piloto()
 	> pilotoNovato.avanzarAlNorteHastaObstaculo (nave)
 
