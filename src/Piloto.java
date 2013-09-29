@@ -9,7 +9,7 @@ class Piloto {
 	 */
 	int avanzarAlNorteHastaObstaculo(Nave navePilotada) {
 		
-		int casilleros = 0;
+		int casillerosAvanzados = 0;
 		
 		Radar radar = navePilotada.getRadar();
 		
@@ -17,9 +17,9 @@ class Piloto {
 			
 			navePilotada.avanzarAlNorte();
 			
-			casilleros++;
+			casillerosAvanzados = casillerosAvanzados + 1;
 		}
 		
-		return casilleros;
+		return casillerosAvanzados;
 	}
 }
