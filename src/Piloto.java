@@ -22,4 +22,19 @@ class Piloto {
 		
 		return casilleros;
 	}
+	
+	/*
+	 * pre : navePilotada ha despegado de la Base
+	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
+	 *       que ocupa el Casillero contiguo en dirección NORTE de la misma.
+	 */
+	void destruirObstaculoAlNorte(Nave navePilotada) {
+		
+		Radar radar = navePilotada.getRadar();
+		
+		while (radar.escanearNorte() != Espectro.VACIO) {
+			
+			navePilotada.atacarAlNorte();
+		}
+	}
 }

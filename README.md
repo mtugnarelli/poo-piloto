@@ -62,5 +62,10 @@ pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
 pilotoNovato.destruirObstaculoAlNorte(nave)
 ```
  
- 
+### Solución
+
+`Piloto.java` [ver][ejercicio2]
+
+
 [ejercicio1]:../ejercicio1/src/Piloto.java
+[ejercicio2]:../ejercicio2/src/Piloto.java
