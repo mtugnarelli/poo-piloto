@@ -134,6 +134,48 @@ pilotoNovato.destruirObstaculoAlSur(nave)
 
 `Piloto.java` [ver][ejercicio4]
 
+## Ejercicio 5
+
+### Enunciado
+
+Contabilizar la cantidad total de casilleros que un `Piloto` hizo avanzar una Nave en dirección NORTE.
+
+### Ejecución
+
+`pilotoNovato` pilota `nave` en dirección NORTE 3 veces, por lo que el atributo 
+`casillerosAvanzadosAlNorte` tiene como valor la suma de los casilleros avanzados en las 3 oportunidades.
+
+```java
+new BatalaEspacial()
+Nave nave = new Nave()
+nave.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.casillerosAvanzadosAlNorte
+pilotoNovato.destruirObstaculoAlNorte(nave)
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.casillerosAvanzadosAlNorte
+```
+
+`pilotoNovato` pilota `naveAlfa` en dirección NORTE 1 vez y `naveBeta` 2 veces, por lo que el 
+atributo `casillerosAvanzadosAlNorte` tiene como valor la suma de los casilleros avanzados con ambas Naves. 
+
+```java
+new BatalaEspacial()
+Nave naveAlfa = new Nave()
+naveAlfa.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(naveAlfa)
+pilotoNovato.casillerosAvanzadosAlNorte
+Nave naveBeta = new Nave()
+pilotoNovato.avanzarAlNorteHastaObstaculo(naveBeta)
+pilotoNovato.destruirObstaculoAlNorte(naveBeta)
+pilotoNovato.avanzarAlNorteHastaObstaculo(naveBeta)
+pilotoNovato.casillerosAvanzadosAlNorte
+```
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
