@@ -105,4 +105,55 @@ class Piloto {
 			navePilotada.atacarAlNorte();
 		}
 	}
+	
+	/*
+	 * pre : navePilotada ha despegado de la Base.
+	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
+	 *       que ocupa el Casillero contiguo en dirección SUR de la misma.
+	 */
+	void destruirObstaculoAlSur(Nave navePilotada) {
+		
+		Radar radar = navePilotada.getRadar();
+		
+		/* si el Radar indica que lo que se encuentra al SUR es DESCONOCIDO, 
+		 * no puede ser destruido */
+		while ((radar.escanearSur() != Espectro.DESCONOCIDO) && (radar.escanearSur() != Espectro.VACIO)) {
+			
+			navePilotada.atacarAlSur();
+		}
+	}
+	
+	/*
+	 * pre : navePilotada ha despegado de la Base.
+	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
+	 *       que ocupa el Casillero contiguo en dirección ESTE de la misma.
+	 */
+	void destruirObstaculoAlEste(Nave navePilotada) {
+		
+		Radar radar = navePilotada.getRadar();
+		
+		/* si el Radar indica que lo que se encuentra al ESTE es DESCONOCIDO, 
+		 * no puede ser destruido */
+		while ((radar.escanearEste() != Espectro.DESCONOCIDO) && (radar.escanearEste() != Espectro.VACIO)) {
+			
+			navePilotada.atacarAlEste();
+		}
+	}
+	
+	/*
+	 * pre : navePilotada ha despegado de la Base.
+	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
+	 *       que ocupa el Casillero contiguo en dirección OESTE de la misma.
+	 */
+	void destruirObstaculoAlOeste(Nave navePilotada) {
+		
+		Radar radar = navePilotada.getRadar();
+		
+		/* si el Radar indica que lo que se encuentra al OESTE es DESCONOCIDO, 
+		 * no puede ser destruido */
+		while ((radar.escanearOeste() != Espectro.DESCONOCIDO) && (radar.escanearOeste() != Espectro.VACIO)) {
+			
+			navePilotada.atacarAlOeste();
+		}
+	}
 }

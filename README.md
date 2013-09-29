@@ -114,8 +114,29 @@ Implementar para la clase `Piloto` los métodos:  `destruirObstaculoAlSur`, `des
 `destruirObstaculoAlOeste`, equivalentes a `destruirObstaculoAlNorte` pero en las otras tres direcciones:
 SUR, ESTE y OESTE respectivamente. 
 
+### Ejecución
+
+```java
+new BatalaEspacial()
+Nave nave = new Nave()
+nave.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+pilotoNovato.avanzarAlEsteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlEste(nave)
+pilotoNovato.avanzarAlOesteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlOeste(nave)
+pilotoNovato.avanzarAlSurHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlSur(nave)
+```
+### Solución
+
+`Piloto.java` [ver][ejercicio4]
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
 [ejercicio2.1]:../ejercicio2.1/src/Piloto.java
 [ejercicio3]:../ejercicio3/src/Piloto.java
+[ejercicio4]:../ejercicio4/src/Piloto.java
