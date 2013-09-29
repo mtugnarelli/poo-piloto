@@ -32,7 +32,9 @@ class Piloto {
 		
 		Radar radar = navePilotada.getRadar();
 		
-		while (radar.escanearNorte() != Espectro.VACIO) {
+		/* si el Radar indica que lo que se encuentra al NORTE es DESCONOCIDO, 
+		 * no puede ser destruido */
+		while ((radar.escanearNorte() != Espectro.DESCONOCIDO) && (radar.escanearNorte() != Espectro.VACIO)) {
 			
 			navePilotada.atacarAlNorte();
 		}

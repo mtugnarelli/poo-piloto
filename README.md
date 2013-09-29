@@ -64,8 +64,24 @@ pilotoNovato.destruirObstaculoAlNorte(nave)
  
 ### Solución
 
-`Piloto.java` [ver][ejercicio2]
+Primera aproximación: `Piloto.java` [ver][ejercicio2]
+
+Considerando que al NORTE puede existir un Agujero Negro o el límite del Tablero: `Piloto.java` [ver][ejercicio2.1]
+
+```java
+new BatalaEspacial()
+Nave nave = new Nave()
+nave.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+```
 
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
+[ejercicio2.1]:../ejercicio2.1/src/Piloto.java
