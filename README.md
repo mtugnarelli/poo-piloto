@@ -102,6 +102,12 @@ pilotoNovato.avanzarAlOesteHastaObstaculo(nave)
 pilotoNovato.avanzarAlSurHastaObstaculo(nave)
 ```
 
+### Solución
+
+`Piloto.java` [ver][ejercicio3]
+
+
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
 [ejercicio2.1]:../ejercicio2.1/src/Piloto.java
+[ejercicio3]:../ejercicio3/src/Piloto.java
