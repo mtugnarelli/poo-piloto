@@ -81,6 +81,26 @@ pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
 pilotoNovato.destruirObstaculoAlNorte(nave)
 ```
 
+## Ejercicio 3
+
+### Enunciado
+
+Implementar para la clase `Piloto` los métodos:  `avanzarAlSurHastaObstaculo`, `avanzarAlEsteHastaObstaculo` y 
+`avanzarAlOesteHastaObstaculo`, equivalentes a `avanzarAlNorteHastaObstaculo` pero en las otras tres direcciones:
+SUR, ESTE y OESTE respectivamente. 
+
+### Ejecución
+
+```java
+new BatalaEspacial()
+Nave nave = new Nave()
+nave.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.avanzarAlEsteHastaObstaculo(nave)
+pilotoNovato.avanzarAlOesteHastaObstaculo(nave)
+pilotoNovato.avanzarAlSurHastaObstaculo(nave)
+```
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
