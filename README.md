@@ -106,6 +106,14 @@ pilotoNovato.avanzarAlSurHastaObstaculo(nave)
 
 `Piloto.java` [ver][ejercicio3]
 
+## Ejercicio 4
+
+### Enunciado 
+
+Implementar para la clase `Piloto` los métodos:  `destruirObstaculoAlSur`, `destruirObstaculoAlEste` y 
+`destruirObstaculoAlOeste`, equivalentes a `destruirObstaculoAlNorte` pero en las otras tres direcciones:
+SUR, ESTE y OESTE respectivamente. 
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
