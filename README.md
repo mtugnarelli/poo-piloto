@@ -29,14 +29,38 @@ new BatalaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
-pilotoNovato.avanzarAlNorteHastaObstaculo (nave)
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
 ```
 
 ### Solución
 
 `Piloto.java` [ver][ejercicio1]
 
+## Ejercicio 2
 
+### Enunciado
 
-	
+Implementar para la clase `Piloto` el método:
+
+```java
+/*
+ * pre : navePilotada ha despegado de la Base
+ * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
+ *       que ocupa el Casillero contiguo en dirección NORTE de la misma.
+ */
+void destruirObstaculoAlNorte(Nave navePilotada)
+```
+
+### Ejecución
+
+```java
+new BatalaEspacial()
+Nave nave = new Nave()
+nave.despegar()
+Piloto pilotoNovato = new Piloto()
+pilotoNovato.avanzarAlNorteHastaObstaculo(nave)
+pilotoNovato.destruirObstaculoAlNorte(nave)
+```
+ 
+ 
 [ejercicio1]:../ejercicio1/src/Piloto.java
