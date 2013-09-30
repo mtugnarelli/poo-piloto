@@ -196,7 +196,7 @@ faltantes: SUR, ESTE, OESTE.
 
 ### Enunciado
 
-Contabilizar la cantidad total de obstáculos destruidos por un `Piloto`.
+Contabilizar la cantidad total de obstáculos destruidos por un `Piloto` en cualquier dirección.
 
 ### Ejecución
 
@@ -212,6 +212,22 @@ pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
 pilotoAtacante.obstaculosDestruidos
 ```
 
+```java
+new BatallaEspacial()
+Nave naveAlfa = new Nave()
+naveAlfa.despegar()
+Piloto pilotoAtacante = new Piloto()
+pilotoAtacante.avanzarAlNorteHastaObstaculo(naveAlfa)
+pilotoAtacante.destruirObstaculoAlNorte(naveAlfa)
+pilotoAtacante.avanzarAlOesteHastaObstaculo(naveAlfa)
+pilotoAtacante.destruirObstaculoAlOeste(naveAlfa)
+pilotoAtacante.obstaculosDestruidos
+```
+
+### Solución
+
+Primer aproximación: `Piloto.java` [ver][ejercicio7]
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
@@ -220,3 +236,4 @@ pilotoAtacante.obstaculosDestruidos
 [ejercicio4]:../ejercicio4/src/Piloto.java
 [ejercicio5]:../ejercicio5/src/Piloto.java
 [ejercicio6]:../ejercicio6/src/Piloto.java
+[ejercicio7]:../ejercicio7/src/Piloto.java

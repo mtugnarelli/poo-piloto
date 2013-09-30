@@ -9,6 +9,8 @@ class Piloto {
 	
 	int casillerosAvanzadosAlOeste = 0;
 
+	int obstaculosDestruidos;
+	
 	/*
 	 * pre : navePilotada ha despegado de la Base.
 	 * post: el Piloto hace avanzar navePilotada en dirección NORTE hasta encontrar 
@@ -124,6 +126,8 @@ class Piloto {
 			
 			navePilotada.atacarAlNorte();
 		}
+		
+		obstaculosDestruidos = obstaculosDestruidos + 1; 
 	}
 	
 	/*
@@ -141,6 +145,8 @@ class Piloto {
 			
 			navePilotada.atacarAlSur();
 		}
+
+		obstaculosDestruidos = obstaculosDestruidos + 1; 
 	}
 	
 	/*
@@ -158,6 +164,8 @@ class Piloto {
 			
 			navePilotada.atacarAlEste();
 		}
+
+		obstaculosDestruidos = obstaculosDestruidos + 1;	
 	}
 	
 	/*
@@ -175,5 +183,7 @@ class Piloto {
 			
 			navePilotada.atacarAlOeste();
 		}
+		
+		obstaculosDestruidos = obstaculosDestruidos + 1;
 	}
 }
