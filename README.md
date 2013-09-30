@@ -205,18 +205,6 @@ new BatallaEspacial()
 Nave naveAlfa = new Nave()
 naveAlfa.despegar()
 Piloto pilotoAtacante = new Piloto()
-pilotoAtacante.avanzarAlSurHastaObstaculo(naveAlfa)
-pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
-pilotoAtacante.avanzarAlSurHastaObstaculo(naveAlfa)
-pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
-pilotoAtacante.obstaculosDestruidos
-```
-
-```java
-new BatallaEspacial()
-Nave naveAlfa = new Nave()
-naveAlfa.despegar()
-Piloto pilotoAtacante = new Piloto()
 pilotoAtacante.avanzarAlNorteHastaObstaculo(naveAlfa)
 pilotoAtacante.destruirObstaculoAlNorte(naveAlfa)
 pilotoAtacante.avanzarAlOesteHastaObstaculo(naveAlfa)
@@ -228,7 +216,7 @@ pilotoAtacante.obstaculosDestruidos
 
 Primer aproximación: `Piloto.java` [ver][ejercicio7]
 
-Segunda aproximación, considerando que no siempre que se invoca alguno de los métodos de `destruirObtaculoAlX`
+Segunda aproximación, considerando que no siempre que se invoca alguno de los métodos de `destruirObtaculoAlXXX`
 se destruye un obstáculo: `Piloto.java` [ver][ejercicio7.1]
 
 ```java
@@ -243,7 +231,7 @@ pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
 pilotoAtacante.obstaculosDestruidos
 ```
 
-Refinamiento final; reemplazando `while` por `do while` para no evaluar dos veces consecutivas la existencia de
+**Refinamiento final**; reemplazando `while` por `do while` para no evaluar dos veces consecutivas la existencia de
 `Espectro.VACIO`: `Piloto.java` [ver][ejercicio7.2]
 
 
@@ -255,5 +243,5 @@ Refinamiento final; reemplazando `while` por `do while` para no evaluar dos vece
 [ejercicio5]:../ejercicio5/src/Piloto.java
 [ejercicio6]:../ejercicio6/src/Piloto.java
 [ejercicio7]:../ejercicio7/src/Piloto.java
-[ejercicio7.1]:../ejercicio7/src/Piloto.java
-[ejercicio7.2]:../ejercicio7/src/Piloto.java
+[ejercicio7.1]:../ejercicio7.1/src/Piloto.java
+[ejercicio7.2]:../ejercicio7.2/src/Piloto.java
