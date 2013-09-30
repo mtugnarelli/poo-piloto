@@ -192,6 +192,26 @@ faltantes: SUR, ESTE, OESTE.
 
 `Piloto.java`: [ver][ejercicio6]
 
+## Ejercicio 7
+
+### Enunciado
+
+Contabilizar la cantidad total de obstáculos destruidos por un `Piloto`.
+
+### Ejecución
+
+```java
+new BatallaEspacial()
+Nave naveAlfa = new Nave()
+naveAlfa.despegar()
+Piloto pilotoAtacante = new Piloto()
+pilotoAtacante.avanzarAlSurHastaObstaculo(naveAlfa)
+pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
+pilotoAtacante.avanzarAlSurHastaObstaculo(naveAlfa)
+pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
+pilotoAtacante.obstaculosDestruidos
+```
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
