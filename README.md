@@ -12,7 +12,7 @@ UNTreF - Algoritmos y Programación 1
 * [Ejercicio 6](#ejercicio-6)
 * [Ejercicio 7](#ejercicio-7)
 * [Ejercicio 8](#ejercicio-8)
-* Solución Final: `Piloto.java` [ver](../src/Piloto.java)
+* Solución Final: `Piloto.java` [ver](../master/src/Piloto.java)
 
 
 ## Ejercicio 1
