@@ -124,12 +124,13 @@ class Piloto {
 		 * no puede ser destruido */
 		if ((radar.escanearNorte() != Espectro.DESCONOCIDO) && (radar.escanearNorte() != Espectro.VACIO)) {
 			
-			while (radar.escanearNorte() != Espectro.VACIO) {
+			do {
 				
 				navePilotada.atacarAlNorte();
-			}
+				
+			} while (radar.escanearNorte() != Espectro.VACIO);
 
-			obstaculosDestruidos = obstaculosDestruidos + 1; 
+			obstaculosDestruidos = obstaculosDestruidos + 1;
 		}
 	}
 	
@@ -146,10 +147,11 @@ class Piloto {
 		 * no puede ser destruido */
 		if ((radar.escanearSur() != Espectro.DESCONOCIDO) && (radar.escanearSur() != Espectro.VACIO)) {
 			
-			while (radar.escanearSur() != Espectro.VACIO) {
+			do {
 				
 				navePilotada.atacarAlSur();
-			}
+				
+			} while (radar.escanearSur() != Espectro.VACIO);
 			
 			obstaculosDestruidos = obstaculosDestruidos + 1; 
 		}
@@ -168,10 +170,11 @@ class Piloto {
 		 * no puede ser destruido */
 		if ((radar.escanearEste() != Espectro.DESCONOCIDO) && (radar.escanearEste() != Espectro.VACIO)) {
 		
-			while (radar.escanearEste() != Espectro.VACIO) {
-				
+			do {
+
 				navePilotada.atacarAlEste();
-			}
+				
+			} while (radar.escanearEste() != Espectro.VACIO);
 			
 			obstaculosDestruidos = obstaculosDestruidos + 1;	
 		}
@@ -190,10 +193,11 @@ class Piloto {
 		 * no puede ser destruido */
 		if ((radar.escanearOeste() != Espectro.DESCONOCIDO) && (radar.escanearOeste() != Espectro.VACIO)) {
 		
-			while (radar.escanearOeste() != Espectro.VACIO) {
+			do {
 				
 				navePilotada.atacarAlOeste();
-			}
+				
+			} while (radar.escanearOeste() != Espectro.VACIO);
 			
 			obstaculosDestruidos = obstaculosDestruidos + 1;
 		}

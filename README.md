@@ -243,6 +243,8 @@ pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
 pilotoAtacante.obstaculosDestruidos
 ```
 
+Refinamiento final; reemplazando `while` por `do while` para no evaluar dos veces consecutivas la existencia de
+`Espectro.VACIO`: `Piloto.java` [ver][ejercicio7.2]
 
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
@@ -254,3 +256,4 @@ pilotoAtacante.obstaculosDestruidos
 [ejercicio6]:../ejercicio6/src/Piloto.java
 [ejercicio7]:../ejercicio7/src/Piloto.java
 [ejercicio7.1]:../ejercicio7/src/Piloto.java
+[ejercicio7.2]:../ejercicio7/src/Piloto.java
