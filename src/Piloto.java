@@ -122,12 +122,15 @@ class Piloto {
 		
 		/* si el Radar indica que lo que se encuentra al NORTE es DESCONOCIDO, 
 		 * no puede ser destruido */
-		while ((radar.escanearNorte() != Espectro.DESCONOCIDO) && (radar.escanearNorte() != Espectro.VACIO)) {
+		if ((radar.escanearNorte() != Espectro.DESCONOCIDO) && (radar.escanearNorte() != Espectro.VACIO)) {
 			
-			navePilotada.atacarAlNorte();
+			while (radar.escanearNorte() != Espectro.VACIO) {
+				
+				navePilotada.atacarAlNorte();
+			}
+
+			obstaculosDestruidos = obstaculosDestruidos + 1; 
 		}
-		
-		obstaculosDestruidos = obstaculosDestruidos + 1; 
 	}
 	
 	/*
@@ -141,12 +144,15 @@ class Piloto {
 		
 		/* si el Radar indica que lo que se encuentra al SUR es DESCONOCIDO, 
 		 * no puede ser destruido */
-		while ((radar.escanearSur() != Espectro.DESCONOCIDO) && (radar.escanearSur() != Espectro.VACIO)) {
+		if ((radar.escanearSur() != Espectro.DESCONOCIDO) && (radar.escanearSur() != Espectro.VACIO)) {
 			
-			navePilotada.atacarAlSur();
+			while (radar.escanearSur() != Espectro.VACIO) {
+				
+				navePilotada.atacarAlSur();
+			}
+			
+			obstaculosDestruidos = obstaculosDestruidos + 1; 
 		}
-
-		obstaculosDestruidos = obstaculosDestruidos + 1; 
 	}
 	
 	/*
@@ -160,12 +166,15 @@ class Piloto {
 		
 		/* si el Radar indica que lo que se encuentra al ESTE es DESCONOCIDO, 
 		 * no puede ser destruido */
-		while ((radar.escanearEste() != Espectro.DESCONOCIDO) && (radar.escanearEste() != Espectro.VACIO)) {
+		if ((radar.escanearEste() != Espectro.DESCONOCIDO) && (radar.escanearEste() != Espectro.VACIO)) {
+		
+			while (radar.escanearEste() != Espectro.VACIO) {
+				
+				navePilotada.atacarAlEste();
+			}
 			
-			navePilotada.atacarAlEste();
+			obstaculosDestruidos = obstaculosDestruidos + 1;	
 		}
-
-		obstaculosDestruidos = obstaculosDestruidos + 1;	
 	}
 	
 	/*
@@ -179,11 +188,14 @@ class Piloto {
 		
 		/* si el Radar indica que lo que se encuentra al OESTE es DESCONOCIDO, 
 		 * no puede ser destruido */
-		while ((radar.escanearOeste() != Espectro.DESCONOCIDO) && (radar.escanearOeste() != Espectro.VACIO)) {
-			
-			navePilotada.atacarAlOeste();
-		}
+		if ((radar.escanearOeste() != Espectro.DESCONOCIDO) && (radar.escanearOeste() != Espectro.VACIO)) {
 		
-		obstaculosDestruidos = obstaculosDestruidos + 1;
+			while (radar.escanearOeste() != Espectro.VACIO) {
+				
+				navePilotada.atacarAlOeste();
+			}
+			
+			obstaculosDestruidos = obstaculosDestruidos + 1;
+		}
 	}
 }
