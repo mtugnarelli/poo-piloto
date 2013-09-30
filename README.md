@@ -25,7 +25,7 @@ class Piloto {
 ### Ejecución
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -54,7 +54,7 @@ void destruirObstaculoAlNorte(Nave navePilotada)
 ### Ejecución
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -69,7 +69,7 @@ Primera aproximación: `Piloto.java` [ver][ejercicio2]
 Considerando que al NORTE puede existir un Agujero Negro o el límite del Tablero: `Piloto.java` [ver][ejercicio2.1]
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -92,7 +92,7 @@ SUR, ESTE y OESTE respectivamente.
 ### Ejecución
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -117,7 +117,7 @@ SUR, ESTE y OESTE respectivamente.
 ### Ejecución
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -146,7 +146,7 @@ Contabilizar la cantidad total de casilleros que un `Piloto` hizo avanzar una Na
 `casillerosAvanzadosAlNorte` tiene como valor la suma de los casilleros avanzados en las 3 oportunidades.
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave nave = new Nave()
 nave.despegar()
 Piloto pilotoNovato = new Piloto()
@@ -163,22 +163,27 @@ pilotoNovato.casillerosAvanzadosAlNorte
 atributo `casillerosAvanzadosAlNorte` tiene como valor la suma de los casilleros avanzados con ambas Naves. 
 
 ```java
-new BatalaEspacial()
+new BatallaEspacial()
 Nave naveAlfa = new Nave()
 naveAlfa.despegar()
 Piloto pilotoNovato = new Piloto()
 pilotoNovato.avanzarAlNorteHastaObstaculo(naveAlfa)
 pilotoNovato.casillerosAvanzadosAlNorte
 Nave naveBeta = new Nave()
+naveBeta.despegar()
 pilotoNovato.avanzarAlNorteHastaObstaculo(naveBeta)
 pilotoNovato.destruirObstaculoAlNorte(naveBeta)
 pilotoNovato.avanzarAlNorteHastaObstaculo(naveBeta)
 pilotoNovato.casillerosAvanzadosAlNorte
 ```
 
+### Solución
+
+`Piloto.java`: [ver][ejercicio5]
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
 [ejercicio2.1]:../ejercicio2.1/src/Piloto.java
 [ejercicio3]:../ejercicio3/src/Piloto.java
 [ejercicio4]:../ejercicio4/src/Piloto.java
+[ejercicio5]:../ejercicio5/src/Piloto.java

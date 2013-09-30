@@ -1,5 +1,7 @@
 
 class Piloto {
+	
+	int casillerosAvanzadosAlNorte = 0;
 
 	/*
 	 * pre : navePilotada ha despegado de la Base.
@@ -19,6 +21,9 @@ class Piloto {
 			
 			casillerosAvanzados = casillerosAvanzados + 1;
 		}
+
+		/* sumariza los casilleros avanzados en esta ejecución */
+		casillerosAvanzadosAlNorte = casillerosAvanzadosAlNorte + casillerosAvanzados;
 		
 		return casillerosAvanzados;
 	}
