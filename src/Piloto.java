@@ -225,13 +225,13 @@ class Piloto {
 		destruirObstaculoAlOeste();
 		
 		/* avanza al ESTE tantas veces como pasos hizo al OESTE */
-		for (int pasos = 0; pasos < pasosAlOeste; pasos++) {
+		for (int pasos = 0; pasos < pasosAlOeste; pasos = pasos + 1) {
 			
 			navePilotada.avanzarAlEste();
 		}
 		
 		/* avanza al SUR tantas veces como pasos hizo al NORTE */
-		for (int pasos = 0; pasos < pasosAlNorte; pasos++) {
+		for (int pasos = 0; pasos < pasosAlNorte; pasos = pasos + 1) {
 			
 			navePilotada.avanzarAlSur();
 		}
