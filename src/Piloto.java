@@ -3,6 +3,12 @@ class Piloto {
 	
 	int casillerosAvanzadosAlNorte = 0;
 
+	int casillerosAvanzadosAlSur = 0;
+	
+	int casillerosAvanzadosAlEste = 0;
+	
+	int casillerosAvanzadosAlOeste = 0;
+
 	/*
 	 * pre : navePilotada ha despegado de la Base.
 	 * post: el Piloto hace avanzar navePilotada en dirección NORTE hasta encontrar 
@@ -47,6 +53,9 @@ class Piloto {
 			casillerosAvanzados = casillerosAvanzados + 1;
 		}
 		
+		/* sumariza los casilleros avanzados en esta ejecución */
+		casillerosAvanzadosAlSur = casillerosAvanzadosAlSur + casillerosAvanzados;
+
 		return casillerosAvanzados;
 	}
 
@@ -69,6 +78,9 @@ class Piloto {
 			casillerosAvanzados = casillerosAvanzados + 1;
 		}
 		
+		/* sumariza los casilleros avanzados en esta ejecución */
+		casillerosAvanzadosAlEste = casillerosAvanzadosAlEste + casillerosAvanzados;
+
 		return casillerosAvanzados;
 	}
 
@@ -91,6 +103,9 @@ class Piloto {
 			casillerosAvanzados = casillerosAvanzados + 1;
 		}
 		
+		/* sumariza los casilleros avanzados en esta ejecución */
+		casillerosAvanzadosAlOeste = casillerosAvanzadosAlOeste + casillerosAvanzados;
+
 		return casillerosAvanzados;
 	}	
 	
