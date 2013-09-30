@@ -12,6 +12,7 @@ UNTreF - Algoritmos y Programación 1
 * [Ejercicio 6](#ejercicio-6)
 * [Ejercicio 7](#ejercicio-7)
 * [Ejercicio 8](#ejercicio-8)
+* [Ejercicio 9](#ejercicio-9)
 * Solución Final: `Piloto.java` [ver](../master/src/Piloto.java)
 
 
@@ -275,6 +276,59 @@ piloto.avanzarAlSurHastaObstaculo()
 ### Solución
 
 `Piloto.java`: [ver][ejercicio8]
+
+## Ejercicio 9
+
+### Enunciado
+
+Implementar en la clase `Piloto` el método `void destruirBaseEnemiga()` que lleve la `navePilotada` hasta la Base
+enemiga, la destruya y regrese a su posición original. Considerando cualquier Tablero que cumpla con la 
+descripción dada más abajo.
+
+```java
+/*
+ * pre : navePilotada ha despegado y está localizada al OESTE de la Base.
+ * post: lleva la navePilotada hasta la Base enemiga, la destruye y
+ *       regresa la navePilotada a su posición original.
+ */
+void destruirBaseEnemiga()
+``` 
+
+### Tablero 
+
+Al OESTE de la Base, a una distancia desconocida, existe una secuencia vertical de Asteroides, de la
+que se desconoce su extensión. En dirección NORTE de esa secuencia, a una distancia desconocida, existe una 
+secuencia horizontal de Asteroide. No se conoce cuantos Asteroides están alineados, pero se sabe que al final de esa
+secuencia en dirección OESTE está localizada la Base enemiga.
+
+### Ejemplo 
+
+```
+	B##########################################
+	
+	
+				#
+				#
+				#
+				#
+				#
+				#
+				#
+				#
+				#                                               N
+				#
+				#
+				#
+				#
+				#
+				#
+				#
+				#
+				#
+				
+				
+				
+```
 
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
