@@ -234,6 +234,31 @@ pilotoAtacante.obstaculosDestruidos
 **Refinamiento final**; reemplazando `while` por `do while` para no evaluar dos veces consecutivas la existencia de
 `Espectro.VACIO`: `Piloto.java` [ver][ejercicio7.2]
 
+## Ejercicio 8
+
+### Enunciado
+
+Cambiar la clase `Piloto` para que en lugar de tener una Nave como parámetro de todos los métodos, `navePilotada`
+sea un atributo.
+
+### Ejecución
+```java
+new BatallaEspacial()
+Nave naveAlfa = new Nave()
+naveAlfa.despegar()
+Piloto piloto = new Piloto()
+piloto.navePilotada = naveAlfa
+piloto.avanzarAlNorteHastaObstaculo()
+piloto.avanzarAlEsteHastaObstaculo()
+piloto.destruirObstaculoAlEste()
+
+Nave naveBeta = new Nave()
+naveBeta.despegar()
+piloto.navePilotada = naveBeta
+piloto.avanzarAlSurHastaObstaculo()
+```
+
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
