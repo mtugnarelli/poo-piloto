@@ -188,6 +188,10 @@ pilotoNovato.casillerosAvanzadosAlNorte
 Contabilizar la cantidad total de casilleros que un `Piloto` hizo avanzar una Nave en cada una de las direcciones
 faltantes: SUR, ESTE, OESTE.
 
+### Solución
+
+`Piloto.java`: [ver][ejercicio6]
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
@@ -195,3 +199,4 @@ faltantes: SUR, ESTE, OESTE.
 [ejercicio3]:../ejercicio3/src/Piloto.java
 [ejercicio4]:../ejercicio4/src/Piloto.java
 [ejercicio5]:../ejercicio5/src/Piloto.java
+[ejercicio6]:../ejercicio6/src/Piloto.java
