@@ -204,4 +204,38 @@ class Piloto {
 			obstaculosDestruidos = obstaculosDestruidos + 1;
 		}
 	}
+
+	/*
+	 * pre : navePilotada ha despegado y está localizada al OESTE de la Base.
+	 * post: lleva la navePilotada hasta la Base enemiga, la destruye y
+	 *       regresa la navePilotada a su posición original.
+	 */
+	void destruirBaseEnemiga() {
+		
+		/* es necesario recordar los casilleros movidos para poder regresar */
+		int pasosAlOeste;
+		int pasosAlNorte;
+		
+		/* lleva la navePilotada hasta la Base enemiga, contabilizando los casilleros avanzados */
+		pasosAlOeste = avanzarAlOesteHastaObstaculo();
+		pasosAlNorte = avanzarAlNorteHastaObstaculo();
+		pasosAlOeste = pasosAlOeste + avanzarAlOesteHastaObstaculo();
+		
+		/* destruye la Base enemiga */
+		destruirObstaculoAlOeste();
+		
+		/* avanza al ESTE tantas veces como pasos hizo al OESTE */
+		for (int pasos = 0; pasos < pasosAlOeste; pasos++) {
+			
+			navePilotada.avanzarAlEste();
+		}
+		
+		/* avanza al SUR tantas veces como pasos hizo al NORTE */
+		for (int pasos = 0; pasos < pasosAlNorte; pasos++) {
+			
+			navePilotada.avanzarAlSur();
+		}
+	}
+
 }
+

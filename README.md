@@ -298,15 +298,15 @@ void destruirBaseEnemiga()
 
 Al OESTE de la Base, a una distancia desconocida, existe una secuencia vertical de Asteroides, de la
 que se desconoce su extensión. En dirección NORTE de esa secuencia, a una distancia desconocida, existe una 
-secuencia horizontal de Asteroide. No se conoce cuantos Asteroides están alineados, pero se sabe que al final de esa
-secuencia en dirección OESTE está localizada la Base enemiga.
+secuencia horizontal de Asteroide. No se conoce cuantos Asteroides están alineados, pero se sabe que al OESTE de esa
+secuencia está localizada la Base enemiga.
 
 ### Ejemplo 
 
 ```
-	B##########################################
+	   ##########################################
+	B
 	
-	
 				#
 				#
 				#
@@ -315,7 +315,7 @@ secuencia en dirección OESTE está localizada la Base enemiga.
 				#
 				#
 				#
-				#                                               N
+				#                                    N
 				#
 				#
 				#
@@ -325,11 +325,14 @@ secuencia en dirección OESTE está localizada la Base enemiga.
 				#
 				#
 				#
-				
-				
+				                                                                                                      #
+				                                                                                                #
 				
 ```
 
+### Solución
+
+Primer aproximación: `Piloto.java` [ver][ejercicio9]
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
@@ -342,3 +345,4 @@ secuencia en dirección OESTE está localizada la Base enemiga.
 [ejercicio7.1]:../ejercicio7.1/src/Piloto.java
 [ejercicio7.2]:../ejercicio7.2/src/Piloto.java
 [ejercicio8]:../ejercicio8/src/Piloto.java
+[ejercicio9]:../ejercicio9/src/Piloto.java
