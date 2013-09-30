@@ -223,19 +223,38 @@ class Piloto {
 		
 		/* destruye la Base enemiga */
 		destruirObstaculoAlOeste();
+
+		/* lleva la navePilotada hasta la posición original */
+		avanzarAlEste(pasosAlOeste);
+		avanzarAlSur(pasosAlNorte);
+	}
+
+	/*
+	 * pre : navePilotada ha despegado y no posee obstáculos para avanzar al ESTE.
+	 * post: hace avanzar navePilota al ESTE tantos casilleros como los indicados. 
+	 */
+	void avanzarAlEste(int casilleros) {
 		
-		/* avanza al ESTE tantas veces como pasos hizo al OESTE */
-		for (int pasos = 0; pasos < pasosAlOeste; pasos++) {
+		for (int pasos = 0; pasos < casilleros; pasos = pasos + 1) {
 			
 			navePilotada.avanzarAlEste();
 		}
 		
-		/* avanza al SUR tantas veces como pasos hizo al NORTE */
-		for (int pasos = 0; pasos < pasosAlNorte; pasos++) {
+		casillerosAvanzadosAlEste = casillerosAvanzadosAlEste + casilleros;
+	}
+	
+	/*
+	 * pre : navePilotada ha despegado y no posee obstáculos para avanzar al SUR.
+	 * post: hace avanzar navePilota al SUR tantos casilleros como los indicados. 
+	 */
+	void avanzarAlSur(int casilleros) {
+		
+		for (int pasos = 0; pasos < casilleros; pasos = pasos + 1) {
 			
 			navePilotada.avanzarAlSur();
 		}
+		
+		casillerosAvanzadosAlSur = casillerosAvanzadosAlSur + casilleros;
 	}
-
 }
 

@@ -334,6 +334,11 @@ secuencia está localizada la Base enemiga.
 
 Primer aproximación: `Piloto.java` [ver][ejercicio9]
 
+Refinamos la solución, construyendo dos métodos: `void avanzarAlSur(int casilleros)` y 
+`void avanzarAlEste(int casilleros)` para simplificar la implementación del método `destruirBaseEnemiga`: 
+`Piloto.java` [ver][ejercicio9.1]
+
+
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
 [ejercicio2.1]:../ejercicio2.1/src/Piloto.java
@@ -346,3 +351,4 @@ Primer aproximación: `Piloto.java` [ver][ejercicio9]
 [ejercicio7.2]:../ejercicio7.2/src/Piloto.java
 [ejercicio8]:../ejercicio8/src/Piloto.java
 [ejercicio9]:../ejercicio9/src/Piloto.java
+[ejercicio9.1]:../ejercicio9.1/src/Piloto.java
