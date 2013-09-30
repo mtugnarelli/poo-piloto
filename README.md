@@ -242,6 +242,7 @@ Cambiar la clase `Piloto` para que en lugar de tener una Nave como parámetro de
 sea un atributo.
 
 ### Ejecución
+
 ```java
 new BatallaEspacial()
 Nave naveAlfa = new Nave()
@@ -258,6 +259,9 @@ piloto.navePilotada = naveBeta
 piloto.avanzarAlSurHastaObstaculo()
 ```
 
+### Solución
+
+`Piloto.java`: [ver][ejercicio8]
 
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
@@ -270,3 +274,4 @@ piloto.avanzarAlSurHastaObstaculo()
 [ejercicio7]:../ejercicio7/src/Piloto.java
 [ejercicio7.1]:../ejercicio7.1/src/Piloto.java
 [ejercicio7.2]:../ejercicio7.2/src/Piloto.java
+[ejercicio8]:../ejercicio8/src/Piloto.java

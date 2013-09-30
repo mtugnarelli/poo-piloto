@@ -1,6 +1,8 @@
 
 class Piloto {
 	
+	Nave navePilotada;
+	
 	int casillerosAvanzadosAlNorte = 0;
 
 	int casillerosAvanzadosAlSur = 0;
@@ -17,7 +19,7 @@ class Piloto {
 	 *       un obstáculo.
 	 *       Devuelve la cantidad de casilleros que pudo avanzar.
 	 */
-	int avanzarAlNorteHastaObstaculo(Nave navePilotada) {
+	int avanzarAlNorteHastaObstaculo() {
 		
 		int casillerosAvanzados = 0;
 		
@@ -42,7 +44,7 @@ class Piloto {
 	 *       un obstáculo.
 	 *       Devuelve la cantidad de casilleros que pudo avanzar.
 	 */
-	int avanzarAlSurHastaObstaculo(Nave navePilotada) {
+	int avanzarAlSurHastaObstaculo() {
 		
 		int casillerosAvanzados = 0;
 		
@@ -67,7 +69,7 @@ class Piloto {
 	 *       un obstáculo.
 	 *       Devuelve la cantidad de casilleros que pudo avanzar.
 	 */
-	int avanzarAlEsteHastaObstaculo(Nave navePilotada) {
+	int avanzarAlEsteHastaObstaculo() {
 		
 		int casillerosAvanzados = 0;
 		
@@ -92,7 +94,7 @@ class Piloto {
 	 *       un obstáculo.
 	 *       Devuelve la cantidad de casilleros que pudo avanzar.
 	 */
-	int avanzarAlOesteHastaObstaculo(Nave navePilotada) {
+	int avanzarAlOesteHastaObstaculo() {
 		
 		int casillerosAvanzados = 0;
 		
@@ -116,7 +118,7 @@ class Piloto {
 	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
 	 *       que ocupa el Casillero contiguo en dirección NORTE de la misma.
 	 */
-	void destruirObstaculoAlNorte(Nave navePilotada) {
+	void destruirObstaculoAlNorte() {
 		
 		Radar radar = navePilotada.getRadar();
 		
@@ -139,7 +141,7 @@ class Piloto {
 	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
 	 *       que ocupa el Casillero contiguo en dirección SUR de la misma.
 	 */
-	void destruirObstaculoAlSur(Nave navePilotada) {
+	void destruirObstaculoAlSur() {
 		
 		Radar radar = navePilotada.getRadar();
 		
@@ -162,7 +164,7 @@ class Piloto {
 	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
 	 *       que ocupa el Casillero contiguo en dirección ESTE de la misma.
 	 */
-	void destruirObstaculoAlEste(Nave navePilotada) {
+	void destruirObstaculoAlEste() {
 		
 		Radar radar = navePilotada.getRadar();
 		
@@ -185,7 +187,7 @@ class Piloto {
 	 * post: el Piloto utiliza navePilotada para atacar hasta destruir la Pieza
 	 *       que ocupa el Casillero contiguo en dirección OESTE de la misma.
 	 */
-	void destruirObstaculoAlOeste(Nave navePilotada) {
+	void destruirObstaculoAlOeste() {
 		
 		Radar radar = navePilotada.getRadar();
 		
