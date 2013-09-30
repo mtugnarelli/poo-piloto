@@ -228,6 +228,24 @@ pilotoAtacante.obstaculosDestruidos
 
 Primer aproximación: `Piloto.java` [ver][ejercicio7]
 
+Segunda aproximación, considerando que no siempre que se invoca alguno de los métodos de `destruirObtaculoAlX`
+se destruye un obstáculo: `Piloto.java` [ver][ejercicio7.1]
+
+```java
+new BatallaEspacial()
+Nave naveAlfa = new Nave()
+naveAlfa.despegar()
+Piloto pilotoAtacante = new Piloto()
+pilotoAtacante.avanzarAlNorteHastaObstaculo(naveAlfa)
+pilotoAtacante.destruirObstaculoAlNorte(naveAlfa)
+pilotoAtacante.destruirObstaculoAlNorte(naveAlfa)
+pilotoAtacante.destruirObstaculoAlSur(naveAlfa)
+pilotoAtacante.obstaculosDestruidos
+```
+
+Refinamiento final; reemplazando `while` por `do while` para no evaluar dos veces consecutivas la existencia de
+`Espectro.VACIO`: `Piloto.java` [ver][ejercicio7.2]
+
 
 [ejercicio1]:../ejercicio1/src/Piloto.java
 [ejercicio2]:../ejercicio2/src/Piloto.java
@@ -237,3 +255,5 @@ Primer aproximación: `Piloto.java` [ver][ejercicio7]
 [ejercicio5]:../ejercicio5/src/Piloto.java
 [ejercicio6]:../ejercicio6/src/Piloto.java
 [ejercicio7]:../ejercicio7/src/Piloto.java
+[ejercicio7.1]:../ejercicio7/src/Piloto.java
+[ejercicio7.2]:../ejercicio7/src/Piloto.java
